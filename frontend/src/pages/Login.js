@@ -7,6 +7,8 @@ import { Label } from "@/components/ui/label";
 import { formatApiError } from "@/lib/api";
 import { Lightning } from "@phosphor-icons/react";
 
+const LOGO_URL = "https://customer-assets.emergentagent.com/job_smartquote-engine/artifacts/ls74viwp_Screenshot%202026-04-03%20194540.png";
+
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -35,14 +37,12 @@ export default function Login() {
     <div className="min-h-screen flex" data-testid="login-page">
       <div className="hidden lg:flex lg:w-1/2 bg-[#0A0A0B] items-center justify-center p-12">
         <div className="max-w-md">
-          <div className="w-12 h-12 bg-[#002FA7] flex items-center justify-center mb-8">
-            <Lightning weight="bold" className="text-white w-7 h-7" />
-          </div>
+          <img src={LOGO_URL} alt="RFPFlow" className="h-14 w-auto mb-8" />
           <h2 className="font-['Chivo'] text-4xl font-black text-white tracking-tight mb-4">
-            SmartQuote<br />Orchestrator
+            RFPFlow<br />Orchestrator
           </h2>
           <p className="text-gray-400 text-base leading-relaxed">
-            Autonomous RFP response engine for Indian SMEs. Parse, price, compete, and close faster.
+            Autonomous RFP response engine for Indian MSMEs. Parse, price, compete, and close faster.
           </p>
           <div className="mt-8 space-y-3">
             {["RFP parsing in seconds", "5 competitor benchmarks per SKU", "GST-compliant PDF quotations", "Owner approval workflows"].map((f, i) => (
@@ -58,14 +58,12 @@ export default function Login() {
       <div className="flex-1 flex items-center justify-center p-6">
         <div className="w-full max-w-md">
           <div className="lg:hidden flex items-center gap-2 mb-8">
-            <div className="w-8 h-8 bg-[#002FA7] flex items-center justify-center">
-              <Lightning weight="bold" className="text-white w-5 h-5" />
-            </div>
-            <span className="font-['Chivo'] font-black text-lg">SmartQuote</span>
+            <img src={LOGO_URL} alt="RFPFlow" className="h-8 w-auto" />
+            <span className="font-['Chivo'] font-black text-lg">RFPFlow</span>
           </div>
 
           <h1 className="font-['Chivo'] text-3xl font-black tracking-tight mb-2">Sign in</h1>
-          <p className="text-muted-foreground mb-8">Enter your credentials to access SmartQuote</p>
+          <p className="text-muted-foreground mb-8">Enter your credentials to access RFPFlow</p>
 
           {error && <div className="bg-red-50 border border-red-200 text-red-700 text-sm p-3 mb-4" data-testid="login-error">{error}</div>}
 

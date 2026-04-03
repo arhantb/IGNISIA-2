@@ -8,6 +8,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { formatApiError } from "@/lib/api";
 import { Lightning } from "@phosphor-icons/react";
 
+const LOGO_URL = "https://customer-assets.emergentagent.com/job_smartquote-engine/artifacts/ls74viwp_Screenshot%202026-04-03%20194540.png";
+
 export default function Register() {
   const [form, setForm] = useState({ email: "", password: "", name: "", role: "client", company_name: "", state: "Maharashtra" });
   const [error, setError] = useState("");
@@ -37,13 +39,11 @@ export default function Register() {
     <div className="min-h-screen flex items-center justify-center p-6 bg-muted/30" data-testid="register-page">
       <div className="w-full max-w-lg bg-white border border-border/50 p-8">
         <div className="flex items-center gap-2 mb-6">
-          <div className="w-8 h-8 bg-[#002FA7] flex items-center justify-center">
-            <Lightning weight="bold" className="text-white w-5 h-5" />
-          </div>
-          <span className="font-['Chivo'] font-black text-lg">SmartQuote</span>
+          <img src={LOGO_URL} alt="RFPFlow" className="h-8 w-auto" />
+          <span className="font-['Chivo'] font-black text-lg">RFPFlow</span>
         </div>
         <h1 className="font-['Chivo'] text-2xl font-black tracking-tight mb-1">Create Account</h1>
-        <p className="text-muted-foreground text-sm mb-6">Register to submit RFPs or manage quotations</p>
+        <p className="text-muted-foreground text-sm mb-6">Register to submit RFPs or manage quotations on RFPFlow</p>
 
         {error && <div className="bg-red-50 border border-red-200 text-red-700 text-sm p-3 mb-4" data-testid="register-error">{error}</div>}
 

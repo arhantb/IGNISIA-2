@@ -80,3 +80,12 @@ Build an end-to-end Autonomous RFP Response & Competitive Quotation Orchestrator
 3. Add email notifications
 4. Add recharts analytics
 5. Enhance client portal with PDF preview
+
+## Update Log - April 3, 2026 (Iteration 2)
+### Changes Made:
+- Renamed from "SmartQuote" to "RFPFlow" across all pages (Landing, Login, Register, Dashboard, RFPDetail, ClientPortal)
+- Updated logo to custom infinity-shaped blue logo with Indian flag colors
+- Completely revamped SME Dashboard with 3 tabs:
+  1. Pipeline & RFPs - 6 KPI cards + MSME India stats strip + RFP queue table
+  2. MSME Insights - Economy share (45% exports, 30% GDP), Key MSME states bar chart, Registration breakdown, MSME infographic, Challenges, How RFPFlow Helps
+  3. Govt Schemes - CHAMPIONS 2.0, RAMP, TReDS, PMEGP, CGTMSE, Classification table, Financial schemes, 25% purchase preference CTA

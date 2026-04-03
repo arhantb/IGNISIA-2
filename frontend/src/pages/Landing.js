@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight, Lightning, ShieldCheck, ChartLineUp, FileText } from "@phosphor-icons/react";
 
+const LOGO_URL = "https://customer-assets.emergentagent.com/job_smartquote-engine/artifacts/ls74viwp_Screenshot%202026-04-03%20194540.png";
+
 export default function Landing() {
   const { user } = useAuth();
   const navigate = useNavigate();
@@ -21,10 +23,8 @@ export default function Landing() {
       <nav className="bg-white/70 backdrop-blur-xl border-b border-border/40 fixed w-full z-50" data-testid="landing-nav">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-[#002FA7] flex items-center justify-center">
-              <Lightning weight="bold" className="text-white w-5 h-5" />
-            </div>
-            <span className="font-['Chivo'] font-black text-lg tracking-tight">SmartQuote</span>
+            <img src={LOGO_URL} alt="RFPFlow" className="h-9 w-auto" />
+            <span className="font-['Chivo'] font-black text-lg tracking-tight">RFPFlow</span>
           </div>
           <div className="flex items-center gap-3">
             <Button variant="ghost" className="rounded-none" onClick={() => navigate("/login")} data-testid="login-nav-btn">
@@ -50,7 +50,7 @@ export default function Landing() {
             </h1>
             <p className="text-base md:text-lg text-muted-foreground max-w-xl mb-8 animate-slide-up" style={{ animationDelay: "0.1s" }}>
               AI-powered multi-agent pipeline that parses RFPs, matches products, analyzes competitors,
-              and generates GST-compliant Indian business quotations autonomously.
+              and generates GST-compliant Indian business quotations autonomously. Built for Indian MSMEs.
             </p>
             <div className="flex flex-wrap gap-3 animate-slide-up" style={{ animationDelay: "0.2s" }}>
               <Button
@@ -122,13 +122,13 @@ export default function Landing() {
       <section className="bg-[#0A0A0B] text-white py-20 px-6 md:px-12">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-['Chivo'] text-3xl sm:text-4xl font-bold tracking-tight mb-4">
-            Built for Indian SMEs. Ready to deploy.
+            Built for Indian MSMEs. Ready to deploy.
           </h2>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-            From MSME tenders to international exports. GST-compliant, multi-currency, approval workflows built in.
+            From MSME tenders to international exports. GST-compliant, multi-currency, approval workflows built in. Powering the Rs 11 lakh crore MSME economy.
           </p>
           <Button className="bg-[#002FA7] text-white rounded-none px-10 py-6 text-base" onClick={handleGetStarted} data-testid="cta-get-started">
-            Launch SmartQuote <ArrowRight className="ml-2" />
+            Launch RFPFlow <ArrowRight className="ml-2" />
           </Button>
         </div>
       </section>
@@ -136,8 +136,8 @@ export default function Landing() {
       {/* Footer */}
       <footer className="border-t border-border/40 py-8 px-6 md:px-12">
         <div className="max-w-7xl mx-auto flex justify-between items-center text-sm text-muted-foreground">
-          <span>SmartQuote Electric Pvt. Ltd. GSTIN: 27AABCS1429B1ZS</span>
-          <span>Hackathon Demo Build</span>
+          <span>RFPFlow - Autonomous RFP Response Engine | GSTIN: 27AABCS1429B1ZS</span>
+          <span>Powering Indian MSMEs</span>
         </div>
       </footer>
     </div>

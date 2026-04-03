@@ -57,7 +57,7 @@ export default function ClientPortal() {
       <header className="bg-white/70 backdrop-blur-xl border-b border-border/40 sticky top-0 z-50">
         <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-between h-14">
           <div className="flex items-center gap-4">
-            <span className="font-['Chivo'] font-black text-lg tracking-tight">SmartQuote</span>
+            <span className="font-['Chivo'] font-black text-lg tracking-tight">RFPFlow</span>
             <Badge variant="outline" className="rounded-none text-[10px]">Client Portal</Badge>
           </div>
           <div className="flex items-center gap-3">

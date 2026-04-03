@@ -8,6 +8,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, Play, CheckCircle, XCircle, Warning, FilePdf, Share, Clock, ShieldCheck, ChartLineUp, Lightning } from "@phosphor-icons/react";
 
+const LOGO_URL = "https://customer-assets.emergentagent.com/job_smartquote-engine/artifacts/ls74viwp_Screenshot%202026-04-03%20194540.png";
+
 export default function RFPDetail() {
   const { rfpId } = useParams();
   const { user } = useAuth();
