@@ -8,14 +8,28 @@ const api = axios.create({
   withCredentials: true,
 });
 
-// Attach token from localStorage as fallback
+// Attach token from localStorage
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem("sq_token");
-  if (token && !config.headers.Authorization) {
+  if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
   return config;
 });
+
+// Handle 401 responses
+api.interceptors.response.use(
+  (res) => res,
+  (err) => {
+    if (err.response?.status === 401 && !err.config?.url?.includes("/auth/")) {
+      localStorage.removeItem("sq_token");
+      if (window.location.pathname !== "/login" && window.location.pathname !== "/" && window.location.pathname !== "/register") {
+        window.location.href = "/login";
+      }
+    }
+    return Promise.reject(err);
+  }
+);
 
 export function formatApiError(detail) {
   if (detail == null) return "Something went wrong.";
