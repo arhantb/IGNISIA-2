@@ -1,0 +1,103 @@
+{
+  "theme": "LIGHT",
+  "archetype": "4 (Swiss & High-Contrast)",
+  "description": "An authoritative, no-nonsense competitive quotation orchestrator. Replaces generic SaaS blue with International Klein Blue and stark monochrome contrasts. Designed for speed, precision, and trust.",
+  "colors": {
+    "background": "#FFFFFF",
+    "foreground": "#0A0A0B",
+    "muted": "#F3F4F6",
+    "muted_foreground": "#6B7280",
+    "primary": "#002FA7",
+    "primary_foreground": "#FFFFFF",
+    "secondary": "#E5E7EB",
+    "secondary_foreground": "#0A0A0B",
+    "accent_warning": "#FFCC00",
+    "accent_danger": "#FF3B30",
+    "accent_success": "#00C853",
+    "border": "#E5E7EB"
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Chivo, sans-serif",
+      "body": "IBM Plex Sans, sans-serif",
+      "mono": "IBM Plex Mono, monospace"
+    },
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl tracking-tighter font-black",
+      "h2": "text-3xl sm:text-4xl tracking-tight font-bold",
+      "h3": "text-xl sm:text-2xl tracking-tight font-medium",
+      "body": "text-base leading-relaxed",
+      "label": "text-xs tracking-[0.2em] uppercase font-bold text-muted-foreground",
+      "data_value": "text-2xl sm:text-3xl font-mono tracking-tight"
+    }
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "p-2, p-4, p-6, p-8, p-12, p-16, p-24, p-32",
+    "dashboard_grid": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6",
+    "marketing_grid": "grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8 md:gap-12",
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "radius": "rounded-none",
+    "borders": "border border-border/40"
+  },
+  "surfaces": {
+    "cards": "bg-white border border-border/50 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-200",
+    "glass_header": "bg-white/70 backdrop-blur-xl border-b border-border/40 saturate-150",
+    "data_table": "border-collapse border border-border/50 bg-white"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary_foreground rounded-none px-6 py-3 font-medium hover:bg-primary/90 transition-colors",
+      "secondary": "bg-secondary text-secondary_foreground rounded-none px-6 py-3 font-medium hover:bg-secondary/80 transition-colors border border-border/50",
+      "ghost": "bg-transparent text-foreground hover:bg-muted transition-colors rounded-none"
+    },
+    "inputs": "rounded-none border-border/50 focus:ring-2 focus:ring-primary/20 focus:border-primary bg-background",
+    "badges": "rounded-none px-2 py-1 text-xs font-mono uppercase tracking-wider border"
+  },
+  "motion": {
+    "hover": "transition-transform duration-200 ease-out",
+    "page_transition": "animate-in fade-in slide-in-from-bottom-4 duration-500",
+    "accordion": "accordion-down 0.2s ease-out, accordion-up 0.2s ease-out"
+  },
+  "media": {
+    "hero_orchestrator_bg": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/271b6f79-c7ae-4888-9aba-06f29c791ffc/images/c19690c9afeca1f254f8f47a1e280a728d483c6a5159670e2ad785b5db0f92d3.png",
+      "description": "Macro photography of precise architectural grid, stark monochrome for landing page hero background",
+      "placement": "Landing Page Hero Background"
+    },
+    "pricing_intelligence_abstract": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/271b6f79-c7ae-4888-9aba-06f29c791ffc/images/9027275cfbd1932309566b2143837f4b0f61796d0de538c1288fe655d550cf55.png",
+      "description": "Abstract geometric composition in International Klein Blue for pricing intelligence section",
+      "placement": "Pricing Intelligence Screen or Feature Section"
+    },
+    "modern_office_1": {
+      "url": "https://images.unsplash.com/photo-1765366417030-16d9765d920a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBpbmRpYW4lMjBvZmZpY2UlMjBidXNpbmVzc3xlbnwwfHx8fDE3NzUyMjM1Mjd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Modern office interior with white desks and black chairs",
+      "placement": "About Us or SME Portal Login Background"
+    },
+    "modern_office_2": {
+      "url": "https://images.unsplash.com/photo-1761818645928-47e5dad8ec76?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBpbmRpYW4lMjBvZmZpY2UlMjBidXNpbmVzc3xlbnwwfHx8fDE3NzUyMjM1Mjd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Modern office interior with chairs and desks",
+      "placement": "Client Portal Login Background"
+    }
+  },
+  "pages_and_features": {
+    "landing_page": "High impact, Swiss bento grid. Use 'hero_orchestrator_bg' with a gradient overlay (bg-gradient-to-r from-black/70 via-black/40 to-transparent). Massive Chivo typography. Never center-align.",
+    "sme_dashboard": "Control Room Grid. No card shadows, 1px borders. IBM Plex Mono for all numeric KPIs. High density.",
+    "rfp_detail_screen": "Two-pane layout. PDF viewer on left, parsed intelligence on right. Use pure HTML/Tailwind for the layout frame to maximize space.",
+    "pricing_intelligence": "Use 'pricing_intelligence_abstract' as a subtle header background. Data tables must use border-collapse with right/bottom borders only to expose the grid.",
+    "approval_workflow": "Drawer/Modal using Glassmorphism. Clear Accept/Reject buttons with prominent data-testid attributes.",
+    "quotation_preview": "A4 proportioned container with white background. Print-ready styling. Classic sans-serif typography for maximum readability by older business owners."
+  },
+  "accessibility_and_testing": {
+    "data_testids": "MANDATORY on all interactive elements. e.g., 'submit-rfp-button', 'approve-quote-button', 'pricing-intelligence-tab'.",
+    "contrast": "Ensure pure black/white contrast on key pricing data. Use primary blue only for primary CTAs."
+  },
+  "instructions_to_main_agent": [
+    "Install specific fonts via Google Fonts: Chivo, IBM Plex Sans, IBM Plex Mono.",
+    "Override default shadcn card borders to 1px solid, remove border-radius (rounded-none).",
+    "Never use full-screen colored gradients. Rely on stark white/grey and 1px borders.",
+    "Use Phosphor Icons (@phosphor-icons/react) for precise, technical iconography. yarn add @phosphor-icons/react",
+    "Ensure all major user actions include 'data-testid' attributes formatted as kebab-case, role-based.",
+    "Do NOT use 'Inter' for headings. Use Chivo."
+  ]
+}
